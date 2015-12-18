@@ -1,0 +1,9 @@
+<ion-view view-title="City list">
+  <ion-content>
+    <ion-list>
+      <ion-item ng-repeat="city in citylist">
+            <a href="#/app/citydetail/{{city._id}}">{{city.name}} - {{city.country}}</a>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>

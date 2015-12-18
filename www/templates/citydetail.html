@@ -1,0 +1,18 @@
+<ion-view view-title="City Detail">
+  <ion-content>
+    <ion-list>
+      <ion-item>
+        {{city.name}} - {{city.sys.country}}
+      </ion-item>
+      <ion-item>
+        <img src="http://openweathermap.org/img/w/{{city.weather[0].icon}}.png"> - {{city.weather[0].main}}
+      </ion-item>
+       <ion-item>
+        {{city.main.temp}}
+      </ion-item>
+      <ion-item>
+        {{city.coord.lon}} - {{city.coord.lat}}
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
